@@ -1,0 +1,13 @@
+USE lab_mysql;
+
+CREATE TABLE Cars (cars_id INT AUTO_INCREMENT PRIMARY KEY, VIN VARCHAR(25), Manufacturer VARCHAR(30), Model VARCHAR(30), Year YEAR (4), Color VARCHAR(30));
+CREATE TABLE Customers (customers_id INT AUTO_INCREMENT PRIMARY KEY, Customer_ID INT, Name VARCHAR (30), Phone VARCHAR(30), Email VARCHAR(50), Address VARCHAR (100), City VARCHAR(50), State_Province VARCHAR(50), Country VARCHAR (30), Postal VARCHAR(10));
+CREATE TABLE Invoices (invoices_id INT AUTO_INCREMENT PRIMARY KEY, Invoice_number INT, Date DATE, Car INT, Customer INT, Sales_persons INT);
+CREATE TABLE Salespersons (salespersons_id INT AUTO_INCREMENT PRIMARY KEY, Staff_ID INT, Name VARCHAR (30), Store VARCHAR (30));
+
+
+SHOW TABLES;
+DESCRIBE Cars;
+DESCRIBE customers;
+DESCRIBE invoices;
+DESCRIBE salespersons;
